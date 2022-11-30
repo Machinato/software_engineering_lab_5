@@ -13,7 +13,7 @@ namespace UnitTest1
             int n = 2;
             double x = 1;
             double res = calculate(x, n);
-            Assert::AreEqual(1.5, res);
+            Assert::AreEqual(1.6, res);
         }
     public:
 
@@ -22,7 +22,7 @@ namespace UnitTest1
             int n = 2;
             double x = -1;
             double res = calculate(x, n);
-            Assert::AreEqual(0., res);
+            Assert::AreEqual(0.15, res);
         }
     public:
 
@@ -31,7 +31,7 @@ namespace UnitTest1
             int n = 3;
             double x = 0;
             double res = calculate(x, n);
-            Assert::AreEqual(0., res);
+            Assert::AreEqual(0.1, res);
         }
     };
     TEST_CLASS(CheckValidParamTest){
